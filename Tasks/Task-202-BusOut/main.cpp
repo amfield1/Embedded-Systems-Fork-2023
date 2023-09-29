@@ -12,13 +12,28 @@
 BusOut leds(TRAF_RED1_PIN, TRAF_YEL1_PIN, TRAF_GRN1_PIN);
 
 int main()
-{
+{   
+    void lights();
+        
     while (true) {
-        leds = 0;   //Binary 000
-        wait_us(500000);
-        leds = 7;   //Binary 111
-        wait_us(500000);    
+                        //Binary 000
+        //leds = 1;
+        //leds = 2;
+        //leds = 3;
+        //leds = 4;
+        //leds = 5;
+        //leds = 6;
+        //leds = 7;   //Binary 111
+        //wait_us(500000);    
     }
 }
 
-
+void lights()
+    {
+    while (true) {
+        for (int i=0 ; i < 8 ; i++){
+            leds = i;       //Binary values of 000 to 111
+            wait_us(500000);
+        }
+    }
+}
