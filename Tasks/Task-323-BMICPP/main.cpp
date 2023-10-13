@@ -25,7 +25,7 @@ int main(int argc, const char * argv[]) {
     cout << h2 << endl;
     
     //Try uncomenting this
-    //person._height = 0.0;
+    //person._height = 0.0;       //Compiler error - '_height' is a private member of 'CHuman'
     return 0;
 }
 
